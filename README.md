@@ -8,7 +8,7 @@
 [![Twitter](https://img.shields.io/badge/twitter-@sec_groundzero-blue.svg)](https://twitter.com/sec_groundzero)
 
 
-The **WarBerry** was built with one goal in mind; to be used in red teaming engagement where we want to obtain as much information 
+**WarBerryPi** was built to be used as a hardware implant during red teaming scenarios where we want to obtain as much information 
 as possible in a short period of time with being as stealth as possible. 
 Just find a network port and plug it in. The scripts have been designed in a way that the approach is targeted to avoid noise 
 in the network that could lead to detection and to be as efficient as possible. 
@@ -16,13 +16,13 @@ The WarBerry script is a collection of scanning tools put together to provide th
 
 
 
-####Disclaimer
+#### Disclaimer
 This tool is only for academic purposes and testing  under controlled environments. Do not use without obtaining proper authorization
 from the network owner of the network under testing.
 The author bears no responsibility for any misuse of the tool.
 
 
-####Usage
+#### Usage
 
 To get a list of all options and switches use:
 
@@ -34,7 +34,6 @@ Options:
 
   --version                             show program's version number and exit
   -h, --help                            show this help message and exit
-  -a ATTACKTYPE, --attack=ATTACKTYPE    Attack Mode. Default: --attack
   -p PACKETS, --packets=PACKETS         Number of Network Packets to capture
   -I IFACE, --interface=IFACE           Network Interface to use. Default: eth0
   -N NAME, --name=NAME                  Hostname to use. Default: Auto
@@ -53,7 +52,6 @@ Options:
 
 
 example usage: sudo python warberry.py -a -T                Attack all TCP Ports
-               sudo python warberry.py --attack --toptcp    Scan only the top tcp ports
                sudo python warberry.py -r                   Use only the recon modules
                sudo python warberry.py -H -I wlan0          Use the wlan0 interface and dont change hostname
                sudo python warberry.py -I eth0 -i -T3       Use the eth0 interface and T3 scanning intensity
@@ -72,7 +70,7 @@ Detailed installation steps can be found at the '**[Installation](https://github
 
 
 ### Reporting 
-Download the /WarBerry/RESULTS folder into the REPORTING/RESULTS folder and open reporting.html.
+Download the **/WarBerry/RESULTS** folder into the **REPORTING/RESULTS** folder and open reporting.html.
 Apache is needed for the reporting tool to work. In Windows download XAMMP and install Apache.
 
 
